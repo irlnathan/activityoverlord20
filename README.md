@@ -2,9 +2,11 @@
 
 This is an update to the original activityOverlord series of screencasts.
 
-Transcripts of screencasts can be found at: [http://irlnathan.github.io/sailscasts/](http://irlnathan.github.io/sailscasts/)
+**Transcripts of screencasts** can be found at: [http://irlnathan.github.io/sailscasts/](http://irlnathan.github.io/sailscasts/)
 
-Videos can be found at: [https://www.youtube.com/playlist?list=PLf8i4fc0zJByWVBmMk8uJ0UEhTIGMnmPQ](https://www.youtube.com/playlist?list=PLf8i4fc0zJByWVBmMk8uJ0UEhTIGMnmPQ)
+**Videos** can be found at: [https://www.youtube.com/playlist?list=PLf8i4fc0zJByWVBmMk8uJ0UEhTIGMnmPQ](https://www.youtube.com/playlist?list=PLf8i4fc0zJByWVBmMk8uJ0UEhTIGMnmPQ)
+
+**Join the mailing list** at: [http://irlnathan.github.io/sailscastsnewsletter/](http://irlnathan.github.io/sailscastsnewsletter/)
 
 ## Creating a Sails/Angular Application (Individual Episodes)
 

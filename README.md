@@ -1,6 +1,6 @@
 # activityOverlord v2.0
 
-This is an update to the original activityOverlord series of screencasts.
+This is an application I'm building to learn Angular and how to integrate it with the new features of Sails.js v0.11.0.
 
 **Transcripts of screencasts** can be found at: [http://irlnathan.github.io/sailscasts/](http://irlnathan.github.io/sailscasts/)
 

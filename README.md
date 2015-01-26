@@ -13,3 +13,11 @@ This is an application I'm building to learn Angular and how to integrate it wit
 - [Ep1: Creating a Sails/Angular Application: Intro](https://www.youtube.com/watch?v=EHIybLmoxfE)
 - [Ep2: Setting up the development enviornment and creating the project](https://www.youtube.com/watch?v=mGrKLi54Xsg)
 - [Ep3: Building an Angular Application in Sails: Ep3 - Understanding Asset Delivery Options in Our SignUp Page.](https://www.youtube.com/watch?v=4keciyLVPiM)
+
+
+> Want to skip ahead?  You can check out a rough preview I did with [@mikermcneil](https://github.com/mikermcneil) at https://github.com/balderdashy/activity-overlord-2-preview.
+
+## License
+
+MIT
+&copy; 2015 Irl Nathan

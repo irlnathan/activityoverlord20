@@ -35,8 +35,10 @@ module.exports.routes = {
   ////////////////////////////////////////////////////////////
   // Server-rendered HTML webpages
   ////////////////////////////////////////////////////////////
-  
-  'GET /signup': {view: 'signup'}
+
+  'GET /signup': {view: 'signup'},
+
+  'POST /signup': 'UserController.signup'
 
   // '/': {
   //   view: 'homepage'

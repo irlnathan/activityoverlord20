@@ -37,8 +37,16 @@ module.exports.routes = {
   ////////////////////////////////////////////////////////////
 
   'GET /signup': {view: 'signup'},
+  'GET /': 'PageController.showHomePage',
 
-  'POST /signup': 'UserController.signup'
+  ////////////////////////////////////////////////////////////
+  // JSON API
+  ////////////////////////////////////////////////////////////
+
+  // User enrollment + authentication
+  'POST /signup': 'UserController.signup',
+  'PUT /login': 'UserController.login',
+  'GET /logout': 'UserController.logout'
 
   // '/': {
   //   view: 'homepage'

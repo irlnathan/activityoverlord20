@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Activity Overlord | Welcome back, <%= me.name %>!</title>
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/angular-toastr.css">
+    <link rel="stylesheet" href="/styles/bootstrap.3.1.1.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <!--STYLES END-->
+    <!--Added this so the client has access to the csrf tag and it's grabbed first service side on every page -->
+    <script type="text/javascript">
+    window.SAILS_LOCALS = {
+      _csrf: '<%= _csrf %>',
+      me: <%- JSON.stringify(me) %>
+    };
+    </script>
+  </head>
+  <body ng-app="DashboardModule" ng-controller="DashboardController" ng-cloak>
+
+    <!-- container = Fixed-width container container-fluid = full-width -->
+    <div class="container-fluid">
+      <!-- Creates the navbar -->
+      <nav class="navbar navbar-default navbar-inverse">
+        <!-- This creates the mechanism for collapse button -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+        <!-- This controls the number of lines in the image when the nav collapse -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <!-- This is the brand on the left-hand side. -->
+        <a class="navbar-brand" href="/#/"> activityOverlord</a>
+        <!-- This is what is the above collapse button points to when the mark-up below is collapsed -->
+        <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
+          <!-- This is what "styles" the li's as navbar items -->
+          <ul class="nav navbar-nav navbar-right">
+            <!-- navbar-right pulls this element right -->
+            <!-- Using ng-show instead of ng-if because we need this mark-up to be in the dom when signup controller
+            fires.  If it's not there (which it wouldn't be in the case of ng-if) then the scope of the signup
+            controller will not be tied to this element. -->
+            <li>
+              <a href="/logout">sign-out</a>
+            </li>
+            <!-- <a ng-controller="signinController" class="btn btn-default navbar-btn navbar-right" href="#" ng-if="!isAuthenticated">sign-in</a> -->
+            <!-- Using ng-show instead of ng-if because we need this mark-up to be in the dom when signup controller
+            fires.  If it's not there (which it wouldn't be in the case of ng-if) then the scope of the signup
+            controller will not be tied to this element. -->
+          </ul>
+        </div>
+      </nav>
+
+      <h1>This is the Dashboard</h1>
+
+    </div>
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/dependencies/angular.1.3.js"></script>
+    <script src="/js/dependencies/angular-toastr.js"></script>
+    <script src="/js/dependencies/compareTo.module.js"></script>
+    <script src="/js/public/signup/SignupModule.js"></script>
+    <script src="/js/private/dashboard/DashboardModule.js"></script>
+    <script src="/js/public/homepage/HomepageModule.js"></script>
+    <script src="/js/private/dashboard/DashboardController.js"></script>
+    <script src="/js/public/homepage/HomepageController.js"></script>
+    <script src="/js/public/signup/SignupController.js"></script>
+    <!--SCRIPTS END-->
+
+  </body>
+</html>

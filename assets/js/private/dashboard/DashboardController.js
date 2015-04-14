@@ -1,1 +1,1 @@
-angular.module('DashboardModule').controller('DashboardController', []);
+angular.module('DashboardModule').controller('DashboardController', [ function(){}]);
